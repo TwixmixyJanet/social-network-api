@@ -80,13 +80,18 @@ Routes act as a map for directing incoming requests to specific controller funct
 ![lesson 3](public/img/lesson3.png)
 
 #### 4. Helpers => dateFormat && seed
-
+For this project I used helpers to set the date/time format and to seed the database. For the dateFormat the ultimate goal was to create a readable timestamp for Thoughts and Reactions in the database. Here is a sample of the code used to implement it.
 <br />
 ![lesson 4](public/img/lesson4.png)
 ![lesson 4](public/img/lesson4b.png)
+<br />
+For the seed file, I wanted to have data already in the system so the entries did not have to be added manually to the database.
+<br />
+![lesson 4](public/img/lesson4c.png)
+![lesson 4](public/img/lesson4d.png)
 
 #### Synopsis
-FROM SCRATCH! We had to build out every aspect of this project. Laying out all the files and rough draft took hours. Thankfully we could rely heavily on the in class assignments and code drills to sort out the needs overall. This challenge was extremely necessary to begin understanding the overall concept of MVC and how it can be applied to an application.
+Sometimes learning new technologies can be just as challenging as learning a concept enveloped in a particular tech. The hangups that I found really came down to not knowing how to write the syntax for the new tech and trying to rely on knowledge of other techs already learned. This required research to make sure syntax was typed specifically to working with MongoDB and Mongoose.
 
 ## Installation
 
@@ -100,7 +105,7 @@ FROM SCRATCH! We had to build out every aspect of this project. Laying out all t
 
 ## Usage
 
-This is a full stack tech blog project. If you would like to update and use app follow the installation steps and curate it to your needs. If you would like to use this app, follow the steps under the description 'How to' above and click the link at the top of this page.
+This is a back end social media api project. If you would like to update and use app follow the installation steps and curate it to your needs. If you would like to use this app, follow the steps under the description 'How to' above and click the link at the top of this page.
 
 ## License
 
