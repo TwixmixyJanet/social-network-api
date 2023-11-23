@@ -40,6 +40,27 @@ const users = [
     },
 ]
 
+const thoughts = [
+    {
+        thoughtText: "This is my first thought!",
+        createdAt: new Date('2023-11-23T13:20:00Z'),
+        username: "Test1",
+        reactions: [],
+      },
+      {
+        thoughtText: "What a beautiful day!",
+        createdAt: new Date('2023-11-23T14:30:00Z'),
+        username: "Patricia Johnson",
+        reactions: [],
+      },
+      {
+        thoughtText: "I'm feeling grateful for all that I have.",
+        createdAt: new Date('2023-11-23T15:45:00Z'),
+        username: "Sarah Brown",
+        reactions: [],
+      },
+]
+
 connection.on('error', (err) => err);
 
 connection.once('open', async () => {
@@ -48,6 +69,7 @@ connection.once('open', async () => {
     await User.deleteMany({});
 
     await User.collection.insertMany(users);
+    await Thought.collection.insertMany(thoughts);
 
     console.info('🌱🌱🌱 Seeding Complete 🌱🌱🌱');
     process.exit(0);
