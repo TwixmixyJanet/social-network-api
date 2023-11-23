@@ -1,0 +1,25 @@
+{
+  "name": "social-network-api",
+  "version": "1.0.0",
+  "description": "The backend for a social network API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TwixmixyJanet/social-network-api.git"
+  },
+  "author": "Janet Webster",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TwixmixyJanet/social-network-api/issues"
+  },
+  "homepage": "https://github.com/TwixmixyJanet/social-network-api#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.0.1",
+    "nodemon": "^3.0.1"
+  }
+}
