@@ -60,33 +60,27 @@ WHEN I test API POST and DELETE routes in Insomnia
 THEN I am able to successfully create and delete reactions to thoughts and add and remove friends to a user’s friend list
 ```
 
-### Lessons Learned
+### MongoDB/Mongoose Lessons Learned 
 
-#### 1. MVC: MODELS
-Thank GOODNESS for sequelize! Not that I don't like SQL, but using sequelize to model things out is beyond beneficial and so much easier to use and test. As you will see there is plenty of error-catching throughout my code to find potential issues. Highly recommend!
-When it comes to models I learned how to connect tables together through what we deemed as the index file. Then from there we broke out a model file for each table of data, for example the BlogPost.
+#### 1. Controllers versus Routes
+I probably should have picked up on this difference before this project, but here we really iron out the separation. Routes and controllers play distinct roles in handling incoming requests and generating appropriate responses. Routes define the pathways for incoming requests, while controllers manage the the application's logic and interctions with the database, ultimately generating the appropriate response to user interactions. I want to delve further into this in the other lessons.
 <br />
 ![lesson 1](public/img/lesson1.png)
-![lesson 1](public/img/lesson1b.png)
 
-#### 2. MVC: VIEWS
-Let's go Handlebars!! This part, although very confusing to get the hang of, I find to be super exciting. Modulating pages is a great way to scale projects quickly. With handlebars we are able to modulate our HTML so that it is easy to reuse throughout the application. For example we start with the main page for the layout, then we have several additional pages to handle different aspects of the application. We can also use partials to manage parts of an existing page. Examples shown are the main, dashboard, blogpost, and dashboardpost.
+#### 2. Controllers
+Controllers handle the application's business logic, processing requests from the routes and generating responses. They interact with the database to retrieve or manipulate data, perform calculations, and prepare the necessary information to be sent back to the user. Controllers orchestrate the application's logic, ensuring that requests are handled efficiently and according to the application's requirements. Here are a couple examples of the controllers used for this project.
 <br />
 ![lesson 2](public/img/lesson2.png)
 ![lesson 2](public/img/lesson2b.png)
 ![lesson 2](public/img/lesson2c.png)
-![lesson 2](public/img/lesson2d.png)
 
-#### 3. MVC: CONTROLLERS(ROUTES)
-The routes was by far the hardest part of this project for me. I'm still not sure I got it right, but the application is working. Controllers manage the navigate and data flow through out the application, which is why this is a full stack project. To begin with the index routes to all the other files and folders within the controllers, utilizing express router. A few more examples being the get all router for blog posts in the home routes, the login route for the users, and posting a new comment.
+#### 3. Routes
+Routes act as a map for directing incoming requests to specific controller functions. They define the endpoints or URLs that a web application can respond to. When a user interacts with the application by accessing a particular URL, the corresponding route matches the URL pattern and directs the request to the appropriate controller action. Here is an example of the routes using the controllers.
 <br />
 ![lesson 3](public/img/lesson3.png)
-![lesson 3](public/img/lesson3b.png)
-![lesson 3](public/img/lesson3c.png)
-![lesson 3](public/img/lesson3d.png)
 
-#### 4. Helpers
-Helpers are helpful! Using the express handlebars we can implement helpers for the server to manage aspects like formatting the date. I'm sure there's a lot more that can be accomplished here, but I am still playing with the idea of what all can be done.
+#### 4. Helpers => dateFormat && seed
+
 <br />
 ![lesson 4](public/img/lesson4.png)
 ![lesson 4](public/img/lesson4b.png)
