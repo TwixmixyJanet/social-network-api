@@ -64,7 +64,7 @@ const thoughts = [
 connection.on('error', (err) => err);
 
 connection.once('open', async () => {
-    console.log('connected to seeding 🌰🌰🌰');
+    console.log('🌰🌰🌰 connected to seeding 🌰🌰🌰');
     await Thought.deleteMany({});
     await User.deleteMany({});
 
