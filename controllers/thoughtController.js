@@ -67,7 +67,7 @@ const thoughtController = {
     },
 
     deleteThought(req, res) {
-        Thought.findOneAndRemove({ _id: req.params.thoughtId })
+        Thought.findOneAndDelete({ _id: req.params.thoughtId })
         .then((dbThoughtData) => {
             if (!dbThoughtData) {
                 return res.status(404).json({ message: "No thought with this ID"});
@@ -82,7 +82,7 @@ const thoughtController = {
         })
         .then((dbUserData) => {
             if (!dbUserData) {
-                return res.status(404).json({ message: "Thought created but could not find user ID"});
+                return res.status(404).json({ message: "Thought deleted but could not find user ID"});
             }
             res.json({ message: "Thought is deleted"});
         })
