@@ -1,22 +1,16 @@
-# SOCIAL NETWORK API
+# (👍≖‿‿≖)👍 SOCIAL NETWORK API 👍(≖‿‿≖👍)
 
-### [View Live Project Here](https://janets-tech-blog-a73a7af9497f.herokuapp.com/ "JANET'S TECH BLOG")<br />
+### [View Video Project Here](https://janets-tech-blog-a73a7af9497f.herokuapp.com/ "JANET'S TECH BLOG")<br />
 ![image of JANET'S TECH BLOG](/public/img/projectimage.png "image of JANET'S TECH BLOG")
 | Technology Used    | Resource URL |
 | --------  | ------- |
 | NodeJS      | https://nodejs.org/en |
 | ExpressJS      | https://expressjs.com/ |
-| Handlebars | https://handlebarsjs.com/ |
-| dotenv      | https://www.npmjs.com/package/dotenv |
-| bcrypt      | https://www.npmjs.com/package/bcrypt |
-| Connect Session  | https://www.npmjs.com/package/connect-session-sequelize  |
-| Boostrap      | https://getbootstrap.com/ |
-| MySQL      | https://www.mysql.com/ |
-| mysql2      | https://www.npmjs.com/package/mysql2 |
-| Sequelize  | https://www.npmjs.com/package/sequelize |
 | Nodemon  | https://www.npmjs.com/package/nodemon |
 | Insomnia | https://insomnia.rest/ |
-| Sequel Ace | https://sequel-ace.com/ |
+| MongoDB | https://www.mongodb.com/ |
+| Mongoose | https://mongoosejs.com/docs/ |
+| MongoDB Compass | https://www.mongodb.com/products/tools/compass |
 | Screencastify | https://www.screencastify.com/ |
 | JavaScript | https://developer.mozilla.org/en-US/docs/Web/JavaScript |
 | Git       | https://git-scm.com/ |

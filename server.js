@@ -14,6 +14,6 @@ app.use(routes);
 
 db.once('open', () => {
     app.listen(PORT, () => {
-        console.log(`Server is now running at http://localhost:${PORT}`);
+        console.log(`Server is now running at 🚀 http://localhost:${PORT} 🚀`);
     });
 });
