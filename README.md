@@ -1,6 +1,6 @@
 # (✿◠‿◠) SOCIAL NETWORK API (❛‿❛✿̶̥̥)
 
-### [View Video Project Here](https://janets-tech-blog-a73a7af9497f.herokuapp.com/ "SOCIAL NETWORK API")<br />
+### [View Video Project Here](https://drive.google.com/file/d/17xN02lGkRAIHOotqJwAM4zFbD0m237cd/view?usp=sharing "SOCIAL NETWORK API")<br />
 ![image of SOCIAL NETWORK API](/public/img/projectimage.png "image of SOCIAL NETWORK API")
 | Technology Used    | Resource URL |
 | --------  | ------- |
