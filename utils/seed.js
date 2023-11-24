@@ -1,6 +1,10 @@
+// IMPORTS
+// connecting to the connection file
 const connection = require('../config/connection');
-const { User, Thought, reactionSchema, Reaction } = require('../models');
+// connecting to the User and Thought models
+const { User, Thought } = require('../models');
 
+// Laying out seed data for users
 const users = [
     {
         username: "John Doe",
@@ -40,6 +44,7 @@ const users = [
     },
 ]
 
+// Laying out seed data for thoughts
 const thoughts = [
     {
         thoughtText: "This is my first thought!",
@@ -61,16 +66,23 @@ const thoughts = [
       },
 ]
 
+// connection to handle any errors
 connection.on('error', (err) => err);
 
+// handling the connection event. The code block listens for the open event on the connection.
 connection.once('open', async () => {
+    // log to establish that the connection was made
     console.log('🌰🌰🌰 connected to seeding 🌰🌰🌰');
+    // Clears out any existing data
     await Thought.deleteMany({});
     await User.deleteMany({});
 
+    // inserts all of the users and thoughts
     await User.collection.insertMany(users);
     await Thought.collection.insertMany(thoughts);
 
+    // log to state that the seeding was successful
     console.info('🌱🌱🌱 Seeding Complete 🌱🌱🌱');
+    // exits the process with a successful exit code
     process.exit(0);
 });
