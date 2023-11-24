@@ -114,7 +114,7 @@ Copyright (c) 2023 Twixmixy / Janet Webster
 
 <hr />
 
-## About The Author
+## About
 ### Janet Webster
 Full Stack MERN Software Engineer in training.
 
