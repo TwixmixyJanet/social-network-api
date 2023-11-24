@@ -22,8 +22,8 @@
 * [Description](#description)
 * [Installation](#installation)
 * [Usage](#usage)
-* [Credits](#credits)
 * [License](#license)
+* [About](#about)
 
 ## Description:
 This project is a back end social media api. Using technology like MongoDB, Mongoose, and MongoDB Compass we are able to fully set up and test a backend for a social media platform.<br />
